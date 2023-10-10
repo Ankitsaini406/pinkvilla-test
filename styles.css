@@ -8,17 +8,18 @@ body {
     scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 
-nav ul{
-    background-color: gainsboro; /* Background color of the navigation bar */
+nav ul {
+    background-color: gainsboro;
+    /* Background color of the navigation bar */
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     margin-bottom: 10px;
     padding-left: 0px;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
 }
 
@@ -27,6 +28,23 @@ nav ul li{
     height: 200px;
 }
 
-.all-pading{
+.all-pading {
     padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dashed {
+    border-bottom: dashed 1px #000000;
+}
+
+.side-img-text {
+    display: grid;
+    /* align-items: center; */
+    grid-template-columns: 0fr 3fr;
+    column-gap: 5px;
+}
+
+.small-img {
+    width: 100px;
+    height: 100px;
 }

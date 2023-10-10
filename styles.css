@@ -29,8 +29,7 @@ nav ul li {
 }
 
 .all-pading {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-inline: 10px;
 }
 
 .dashed {
@@ -47,4 +46,57 @@ nav ul li {
 .small-img {
     width: 100px;
     height: 100px;
+}
+
+.black-box {
+    margin-block: 10px;
+    height: 250px;
+    width: auto;
+    background-color: #000000;
+}
+
+.inside-black-box {
+    margin-block: 10px;
+    padding: 10px;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    box-shadow: 10px 10px yellow;
+}
+
+.black-box-round-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-block: 10px;
+}
+
+.section-bar {
+    background: black;
+    margin: 30px 0;
+    padding-bottom: 3px;
+    width: 100%;
+    position: relative;
+    top: 12px;
+}
+
+.font .section-label-v2 {
+    margin: 0;
+    font-weight: 700;
+    color: black;
+    padding: 10px 10px 10px 15px;
+    position: relative;
+    top: -36px;
+}
+
+/* .section-label-v2 {
+    font-size: 22px;
+} */
+
+.celebs{
+    margin-block: 10px;
+    height: 500px;
+    width: 100%;
+    border-style: solid;
+    border-color: black;
 }

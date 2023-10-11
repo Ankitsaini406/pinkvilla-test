@@ -120,16 +120,82 @@ nav ul li {
     width: 100%;
 }
 
-.h6,
+/* .h6,
 h6 {
     text-align: center;
-}
+} */
 
-.add-list-img{
+.add-list-img {
     height: 200px;
     width: 100%;
 }
 
-.mini-text{
+.mini-text {
     font-size: xx-small;
+    color: gray;
+    font-weight: bold;
+}
+
+.mini-text-2 {
+    font-size: xx-small;
+    color: gray;
+}
+
+.footer {
+    background-color: #212529;
+    color: white;
+    height: 900px;
+    width: 100%;
+}
+
+#mail {
+    position: relative;
+    height: 30px;
+    border-radius: 5px;
+    width: 337px;
+    padding-left: 10px;
+    color: #212529;
+    background-color: #000000;
+    border-style: none;
+    /* border: 1px red; */
+}
+
+.form button {
+    position: absolute;
+    right: 40px;
+    border-radius: 0px 5px 5px 0px;
+    height: 30px;
+    background-color: lightskyblue;
+    color: white;
+    /* left: 10px;  */
+}
+
+.privacy-statement {
+    color: lightblue;
+}
+
+.store-play button {
+    background-color: #000000;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex p{
+    /* justify-content:; */
+}
+
+.social-icon{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white; 
+    color: black; 
+    border: 1px solid white;
+    margin-right: 30px;
 }

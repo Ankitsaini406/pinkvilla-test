@@ -31,9 +31,16 @@ nav ul li {
 }
 
 .small-add p {
-    justify-content: center;
     text-align: center;
     color: #212529;
+}
+
+.small-add img {
+    object-fit: cover;
+    object-position: center;
+    height: 60px;
+    width: 336px;
+    padding-left: 10px;
 }
 
 .big-add {
@@ -253,7 +260,7 @@ h6 {
 .footer {
     background-color: #212529;
     color: white;
-    height: 1200px;
+    height: 1090px;
     width: 100%;
 }
 
@@ -334,7 +341,7 @@ h6 {
 .footer-ul li {
     text-decoration: none;
     list-style-type: none;
-    color: lightgray;
+    color: gray;
 }
 
 .exclusives-main {
@@ -401,4 +408,27 @@ h6 {
     /* font-weight: bold; */
     width: 40px;
     background: red;
+}
+
+.all-drop-footer {
+    margin-top: 20px;
+}
+
+.footer-last {
+    height: 40px;
+    width: 100%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }

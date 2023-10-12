@@ -49,7 +49,7 @@ nav ul li {
     object-fit: cover;
     object-position: center;
     height: 200px;
-    width: 360px;
+    width: 336px;
     padding-left: 10px;
 }
 
@@ -145,23 +145,67 @@ nav ul li {
     background: #fff;
     display: inline-block;
     padding: 5px 10px;
+    z-index: 2;
 }
 
 .btnexplore::after {
-    content: "";
+    content: "\27A4";
     border-top: 1px dashed #ccc;
     width: 100%;
     position: absolute;
     top: 50%;
+    z-index: 1;
+}
+
+.btnexplores {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    top: 20px;
+}
+
+.btnexplores span {
+    position: relative;
+    background: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    z-index: 2;
+
+}
+
+.btnexplores::after {
+    content: "\27A4";
+    border-top: solid black;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+fieldset {
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    width: 150px;
 }
 
 .celebs {
     padding-top: 10px;
-    margin-block: 10px;
-    height: 550px;
+    margin-block: 20px;
+    height: 498px;
     width: 100%;
     border-style: solid;
     border-color: black;
+    position: relative;
+    z-index: 1;
 }
 
 .tv-img-text {
@@ -217,7 +261,7 @@ h6 {
     position: relative;
     height: 30px;
     border-radius: 5px;
-    width: 337px;
+    /* width: 337px; */
     padding-left: 10px;
     color: lightgray;
     background-color: #000000;

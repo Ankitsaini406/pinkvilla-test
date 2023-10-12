@@ -432,3 +432,18 @@ h6 {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+
+    .all-pading {
+        padding-inline: 100px;
+    }
+
+    .big-add img {
+        object-fit: cover;
+        object-position: center;
+        height: 200px;
+        width: 100%;
+        padding-left: 10px;
+    }
+}

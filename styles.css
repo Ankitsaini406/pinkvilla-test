@@ -470,6 +470,10 @@ h6 {
     object-fit: cover;
 }
 
+/* .footer-extra {
+    visibility: hidden;
+} */
+
 @media only screen and (min-width: 1024) {
     .main-visual-story {
         display: grid;
@@ -545,13 +549,13 @@ h6 {
         gap: 10px;
     }
 
-    .entertainment{
+    .entertainment {
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
         gap: 10px;
     }
 
-    .entertainment-main{
+    .entertainment-main {
         grid-column: 1 / span 3;
         overflow: auto;
     }
@@ -614,5 +618,10 @@ h6 {
         /* font-weight: bold; */
         width: 40px;
         background: red;
+    }
+
+    .footer-main {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
     }
 }

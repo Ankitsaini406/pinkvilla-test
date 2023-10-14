@@ -1,3 +1,8 @@
+* {
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
 body {
     font-family: Gilroy-Medium, Roboto, "Helvetica Neue", sans-serif;
     font-size: 14px;
@@ -113,7 +118,7 @@ nav ul li {
     padding: 10px;
     background-color: white;
     height: auto;
-    width: 200px;
+    width: 50%;
     box-shadow: 10px 10px yellow;
 }
 
@@ -448,6 +453,22 @@ h6 {
     grid-template-columns: auto auto auto;
 }
 
+.black-box-add {
+    height: 200px;
+    width: auto;
+    background-color: rgba(247, 240, 240, 0.739);
+    border: 1px #b4b1b1;
+    border-style: solid;
+    margin-bottom: 20px;
+}
+
+.black-box-add img {
+    padding-bottom: 10px;
+    padding-inline: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 @media only screen and (min-width: 1024) {
     .main-visual-story {
@@ -458,6 +479,10 @@ h6 {
 }
 
 @media (min-width: 520px) {
+
+    hr {
+        visibility: hidden;
+    }
 
     .all-body {
         max-width: 1200px;
@@ -479,14 +504,6 @@ h6 {
         width: 100%;
         padding-left: 80px;
         padding-right: 90px;
-    }
-
-    .full-image {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        object-position: center;
-        padding-inline: 100px;
     }
 
     .main-visual-story {
@@ -528,6 +545,17 @@ h6 {
         gap: 10px;
     }
 
+    .entertainment{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 10px;
+    }
+
+    .entertainment-main{
+        grid-column: 1 / span 3;
+        overflow: auto;
+    }
+
     .tv-main {
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
@@ -545,5 +573,46 @@ h6 {
         grid-template-columns: auto auto auto auto auto auto;
         column-gap: 5px;
         row-gap: 10px;
+    }
+
+    .main-black-box {
+        display: flex;
+        height: 200px;
+    }
+
+    .exclusives {
+        display: flex;
+    }
+
+    .pentagon {
+        position: absolute;
+        right: -4%;
+        top: 7%;
+        transform: translate(-50%, -50%);
+        height: 40px;
+        width: 40px;
+        /* border-top: 180px solid red; */
+        background: red;
+        color: white;
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+    }
+
+    .pentagon-mini {
+        position: absolute;
+        right: -3%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+        height: 25px;
+        width: 30px;
+        /* border-top: 180px solid red; */
+        background: red;
+        color: white;
+        text-align: center;
+        font-size: medium;
+        /* font-weight: bold; */
+        width: 40px;
+        background: red;
     }
 }

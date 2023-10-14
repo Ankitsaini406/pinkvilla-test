@@ -89,13 +89,14 @@ nav ul li {
 
 .side-img-text {
     display: grid;
-    /* align-items: center; */
+    align-items: center;
     grid-template-columns: 0fr 3fr;
     column-gap: 5px;
+    row-gap: 5px;
 }
 
 .small-img {
-    width: 100%;
+    width: 180px;
     height: auto;
 }
 
@@ -213,25 +214,21 @@ legend {
 }
 
 .celebs {
-    padding-top: 10px;
-    margin-block: 20px;
-    height: 498px;
-    width: 100%;
-    border-style: solid;
-    border-color: black;
-    position: relative;
-    z-index: 1;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+    /* gap: 10px; */
 }
 
-.tv-img-text {
-    padding-right: 0px;
-    justify-content: flex-end;
+.tv-main {
     display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
 }
 
 .tv-img {
-    height: 160px;
-    width: 160px;
+    height: auto;
+    width: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -306,10 +303,6 @@ h6 {
 .flex {
     display: flex;
     align-items: center;
-}
-
-.flex p {
-    /* justify-content:; */
 }
 
 .social-icon {
@@ -444,7 +437,7 @@ h6 {
 .main-visual-story {
     display: grid;
     grid-template-columns: auto auto;
-    
+
 }
 
 .explore-categories {
@@ -478,10 +471,6 @@ h6 {
     .inner-visual-story hr {
         visibility: hidden;
     }
-
-    /* .all-pading {
-        padding-inline: 100px;
-    } */
 
     .big-add img {
         object-fit: cover;
@@ -524,130 +513,37 @@ h6 {
         grid-template-columns: auto auto auto auto auto auto;
     }
 
-    /* .main-visual-story p {
-        width: auto;
-    } */
+    legend {
+        color: black;
+        padding: 5px 10px;
+        text-align: left;
+        width: 150px;
+        margin-left: 20px;
+    }
 
-    /* .inner-visual-story {
+    .celebs {
         display: flex;
-        justify-content: center;
-    } */
-
-    /* h6,
-    p {
-        font-size: x-large;
-    } */
-
-    /* .all-pading {
-        padding-inline: 100px;
+        justify-content: space-around;
+        grid-template-columns: auto auto;
+        gap: 10px;
     }
 
-    latest {
-        display: flex;
+    .tv-main {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 10px;
     }
 
-    latest hr {
-        display: none;
+    .tv-item1 {
+        grid-column: 1 / span 3;
+        overflow: auto;
     }
 
-    .big-add {
-        object-fit: cover;
-        object-position: center;
-        height: 350px;
-        width: 100%;
-        padding-left: 10px;
-    }
-
-
-
-    .small-add {
-        object-fit: cover;
-        object-position: center;
-        height: 300px;
-        width: 100%;
-        padding-left: 10px;
-    }
-
-    .exclusives-main {
-        margin-block: 20px;
-        text-align: center;
+    .side-img-text {
+        display: grid;
         align-items: center;
-        border-style: dotted;
-        height: 520px;
-        width: 40%;
-        border-width: 2px;
-        border-color: lightgray;
-        box-shadow: 10px 10px yellow;
+        grid-template-columns: auto auto auto auto auto auto;
+        column-gap: 5px;
+        row-gap: 10px;
     }
-
-    .exclusives-main img {
-        width: 100%;
-        height: 400px;
-    }
-
-    .pentagon {
-        position: absolute;
-        right: -2%;
-        top: 4%;
-        transform: translate(-50%, -50%);
-        height: 40px;
-        width: 40px;
-        background: red;
-        color: white;
-        text-align: center;
-        font-size: x-large;
-        font-weight: bold;
-    }
-
-    .exclusives-sub {
-        margin-block: 20px;
-        border-style: dotted;
-        height: 550px;
-        width: auto;
-        border-width: 2px;
-        border-color: lightgray;
-        box-shadow: 10px 10px yellow;
-    }
-
-    .black-box {
-        margin-left: 100px;
-        margin-block: 10px;
-        height: 300px;
-        width: 50%;
-        background-color: #000000;
-    }
-
-    .black-box-round-image {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .inside-black-box {
-        margin-block: 10px;
-        padding: 10px;
-        background-color: white;
-        height: 200px;
-        width: 500px;
-        box-shadow: 10px 10px yellow;
-    }
-
-    .black-big-add {
-        object-fit: cover;
-        object-position: center;
-        height: 350px;
-        width: 100%;
-        padding-left: 10px;
-    }
-
-    .black-big-add img {
-        object-fit: cover;
-        object-position: center;
-        height: 300px;
-        width: 100%;
-        padding-left: 80px;
-        padding-right: 90px;
-    } */
 }
